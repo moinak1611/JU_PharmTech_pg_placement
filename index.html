@@ -8,6 +8,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
+
+        html, body {
+            width: 100vw;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        /* Ensure main containers do not exceed the viewport */
+        .header-content,
+        .nav-container,
+        .hero,
+        .specializations,
+        .students,
+        .stats,
+        .footer-container {
+            width: 100%;
+            max-width: 100%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            box-sizing: border-box;
+        }
+
+        /* Prevent unwanted horizontal scroll due to grid gaps or card overflows */
+        .spec-grid,
+        .student-grid,
+        .stats-grid {
+            overflow-x: hidden;
+        }
         :root {
             --primary: #2c3e50;
             --secondary: #3498db;
@@ -549,6 +577,27 @@
                 flex-direction: row;
                 justify-content: space-between;
                 text-align: left;
+            }
+            html, body {
+            width: 100vw;
+            max-width: 100%;
+            overflow-x: hidden;
+            }
+
+            body {
+                padding: 0;
+                margin: 0;
+            }
+
+            .hero, .students, .specializations, .stats, .footer-container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            .student-card,
+            .spec-card {
+                max-width: 100%;
+                box-sizing: border-box;
             }
             
             .logo-container {
