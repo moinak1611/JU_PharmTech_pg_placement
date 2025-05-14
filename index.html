@@ -543,107 +543,102 @@
         }
 
         /* Responsive Breakpoints */
-    @media (min-width: 576px) {
-        .dept-logo {
-            width: 90px;
-            height: 90px;
-        }
-        
-        .student-grid {
-            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-        }
-        
-        .student-photo {
-            height: 200px;
-        }
-    }
-
-    @media (min-width: 768px) {
+        @media (max-width: 576px) {
         .header-content {
-            flex-direction: row;
-            justify-content: space-between;
-            text-align: left;
-        }
-        
-        .logo-container {
-            flex-direction: row;
+            flex-direction: column;
             align-items: center;
-            text-align: left;
-            margin-bottom: 0;
+            text-align: center;
         }
-        
-        .dept-logo {
-            margin-right: 1rem;
-            margin-bottom: 0;
-        }
-        
-        .dept-image {
-            margin-top: 0;
-            width: 250px;
-        }
-        
-        .hero {
-            padding: 3rem 1rem;
-        }
-        
-        .hero h2 {
-            font-size: 1.8rem;
-        }
-        
-        .footer-container {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
 
-    @media (min-width: 992px) {
-        .dept-logo {
-            width: 110px;
-            height: 110px;
+        .logo-container {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 1rem;
         }
-        
+
+        .dept-logo {
+            width: 80px;
+            height: 80px;
+        }
+
         .dept-info h1 {
-            font-size: 1.6rem;
+            font-size: 1.2rem;
         }
-        
-        .dept-image {
-            width: 300px;
-        }
-        
-        .hero h2 {
-            font-size: 2.2rem;
-        }
-        
-        .student-grid {
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-        }
-        
-        .student-photo {
-            height: 220px;
-        }
-        
-        .footer-container {
-            grid-template-columns: repeat(3, 1fr);
-        }
-        
-        .footer-logo {
-            width: 100px;
-            height: 100px;
-        }
-    }
 
-    @media (min-width: 1200px) {
-        .dept-logo {
-            width: 120px;
-            height: 120px;
+        .dept-info p {
+            font-size: 0.8rem;
         }
-        
+
+        .dept-image {
+            width: 90%;
+            max-width: 250px;
+            margin-top: 1rem;
+        }
+
+        .hero h2 {
+            font-size: 1.3rem;
+        }
+
+        .hero p {
+            font-size: 0.9rem;
+        }
+
+        .cta-button {
+            font-size: 0.9rem;
+            padding: 0.6rem 1.5rem;
+        }
+
         .student-photo {
-            height: 240px;
+            height: 150px;
         }
-        
+
+        .student-info h3 {
+            font-size: 0.9rem;
+        }
+
+        .student-info p {
+            font-size: 0.75rem;
+        }
+
         .footer-logo {
-            width: 120px;
-            height: 120px;
+            width: 80px;
+            height: 80px;
+        }
+
+        .about-text {
+            font-size: 0.8rem;
+        }
+
+        .footer-section-title {
+            font-size: 1rem;
+        }
+
+        .footer-links a, .contact-item span {
+            font-size: 0.8rem;
+        }
+
+        .contact-item p {
+            font-size: 0.8rem;
+        }
+
+        .stat-number {
+            font-size: 1.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+        }
+
+        .nav-links a {
+            font-size: 0.85rem;
+            padding: 0.4rem 0.8rem;
+        }
+
+        .video-container iframe,
+        video {
+            width: 100% !important;
+            height: auto !important;
         }
     }
     </style>
