@@ -346,7 +346,7 @@
         
         .student-photo {
             width: 100%;
-            height: 200px;
+            height: clamp(150px, 25vw, 200px); /* Adjust height dynamically */
             object-fit: cover;
             border-bottom: 1px solid #eee;
         }
@@ -404,6 +404,7 @@
         
         /* Footer Styles */
         footer {
+            font-size: clamp(12px, 1.5vw, 14px); /* Scales text on all devices */
             background: linear-gradient(135deg, #1a2a6c, #2a3a7c, #3a4a8c);
             color: #fff;
             padding: 3rem 1rem 0;
@@ -464,6 +465,7 @@
         }
 
         .footer-links, 
+        
         .footer-contact {
             text-align: center;
         }
@@ -572,7 +574,7 @@
         }
 
         /* Responsive Styles */
-        @media (min-width: 768px) {
+        @media (min-width: 600px) {
             .header-content {
                 flex-direction: row;
                 justify-content: space-between;
@@ -1144,7 +1146,7 @@
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-phone contact-icon"></i>
-                    <span>+91 9123065728</span>
+                    <span>+91 744 950 5435</span>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-envelope contact-icon"></i>
