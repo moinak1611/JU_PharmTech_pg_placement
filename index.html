@@ -291,7 +291,7 @@
         
         /* Students Section */
         .students {
-            padding: 3rem 1rem;
+            padding: clamp(1.5rem, 3vw, 3rem) 1rem;
             background-color: var(--light);
         }
         
@@ -347,7 +347,7 @@
         
         .student-photo {
             width: 100%;
-            height: 200px;
+            height: clamp(150px, 25vw, 200px); /* Adjust height dynamically */
             object-fit: cover;
             border-bottom: 1px solid #eee;
         }
@@ -404,6 +404,13 @@
         }
         
         /* Footer Styles */
+
+        .footer-contact {
+            font-size: clamp(12px, 1.5vw, 14px); /* Scales text on all devices */
+            color: #ffffff;
+            max-width: 100%;
+            padding: 10px;
+        }
         footer {
             background: linear-gradient(135deg, #1a2a6c, #2a3a7c, #3a4a8c);
             color: #fff;
@@ -573,7 +580,7 @@
         }
 
         /* Responsive Styles */
-        @media (min-width: 768px) {
+        @media (min-width: 600px) {
             .header-content {
                 flex-direction: row;
                 justify-content: space-between;
@@ -1300,6 +1307,5 @@
     </script>
 </body>
 </html>
-
 
 
